@@ -1,0 +1,16 @@
+[versions]
+dokka = "1.7.20"
+kotlin = "1.7.22"
+kotest = "5.5.4"
+
+[libraries]
+kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
+kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
+
+[bundles]
+kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm" ]
+
+[plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
