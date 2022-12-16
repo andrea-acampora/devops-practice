@@ -1,0 +1,21 @@
+name: build on os matrix
+
+'on':
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ ubuntu, macos, windows ]
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: build
+        run: |
+          ./gradlew build --parallel || ./gradlew build --parallel || ./gradlew build --parallel
