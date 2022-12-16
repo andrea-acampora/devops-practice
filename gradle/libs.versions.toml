@@ -1,5 +1,4 @@
 [versions]
-dokka = "1.7.20"
 kotlin = "1.7.22"
 kotest = "5.5.4"
 
@@ -11,6 +10,4 @@ kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", 
 kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm" ]
 
 [plugins]
-dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
-gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
