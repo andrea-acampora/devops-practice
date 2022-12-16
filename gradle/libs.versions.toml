@@ -11,3 +11,4 @@ kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm" ]
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+publishOnCentral = "org.danilopianini.publish-on-central:2.0.11"
