@@ -3,7 +3,7 @@
 - [x] Configure a build system to compile and run the program.
 - [x] Configure the git hooks to make sure that every commit message adheres to a convention (conventional commits are recommended).
 - [x] Configure a CI pipeline that compiles and executes the program on Linux.
-- [ ] Create a build matrix for testing with multiple operating systems.
+- [x] Create a build matrix for testing with multiple operating systems.
 - [ ] Create an empty release job that runs only if the previous ones completed successfully.
 - [ ] Configure the program for release on Maven Central. Use of dedicated plugins (e.g., https://github.com/DanySK/publish-on-central) is allowed.
 - [ ] Make sure that you can upload and close the project on Maven Central.

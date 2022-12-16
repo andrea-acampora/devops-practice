@@ -2,7 +2,7 @@ name: deploy
 
 'on':
   workflow_run:
-    workflows: [Build]
+    workflows: [build on os matrix]
     types:
       - completed
     branches: [main]
@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - run: echo 'Build passed, going to deploy!'
+      - run: echo 'The triggering workflow passed'
