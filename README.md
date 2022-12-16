@@ -1,8 +1,8 @@
 - [x] Create a new public GitHub repository "devops-practice" (or really whatever you like), or pick an old project of yours with no build automation nor CI.
 - [x] If you created a new repo, write a program in a JVM-compatible language of your pick (Java, Groovy, Scala, Kotlin).
 - [x] Configure a build system to compile and run the program.
-- [ ] Configure the git hooks to make sure that every commit message adheres to a convention (conventional commits are recommended).
-- [ ] Configure a CI pipeline that compiles and executes the program on Linux.
+- [x] Configure the git hooks to make sure that every commit message adheres to a convention (conventional commits are recommended).
+- [x] Configure a CI pipeline that compiles and executes the program on Linux.
 - [ ] Create a build matrix for testing with multiple operating systems.
 - [ ] Create an empty release job that runs only if the previous ones completed successfully.
 - [ ] Configure the program for release on Maven Central. Use of dedicated plugins (e.g., https://github.com/DanySK/publish-on-central) is allowed.
